@@ -1,0 +1,138 @@
+.album-list {
+    clear:both;
+
+    .album-section {
+        margin-bottom: 15px;
+        width: 100%;
+        display: table;
+
+        .others {
+            height: 251px;
+            margin-left: 2px;
+            overflow: hidden;
+            width: 642px;
+
+            .particular-photo {
+                border: 1px solid #EEEEEE;
+                box-shadow: 1px 1px 1px #DDDDDD;
+                float: left;
+                height: 122px;
+                margin-bottom: 4px;
+                margin-left: 4px;
+                text-align: center;
+                width: 154px;
+            }
+        }
+
+        .album-principal-container {
+            width: 33%;
+            height: 300px;
+            border-top: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            overflow: hidden;
+            border-right: 2px solid #fff
+        }
+    }
+    .more-albums-link {
+        cursor: pointer;
+    }
+}
+
+.container_album_list {
+
+    .principal-box {
+
+        position: relative;
+
+        a {
+            color: #FFFFFF;
+        }
+
+        .container_album_tit {
+            background-color: rgba(0, 0, 0, 0.70);
+            color: #FFFFFF;
+            height: 100%;
+            margin-top: 0px;
+            opacity: 0;
+            padding: 0px 10px;
+            position: absolute;
+            top: 0px;
+            transition: opacity .4s ease-in-out;
+            -moz-transition: opacity .4s ease-in-out;
+            -webkit-transition: opacity .4s ease-in-out;
+            width:100%;
+            z-index: 1;
+
+            .album-title {
+                font-size: 22px;
+                margin-top: 60px;
+
+                :hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .photos-number {
+                margin: 15px 0px;
+            }
+
+            .album-actions {
+
+                height: 45px;
+                margin:auto;
+                display:table;
+
+                :hover.album-action {
+                    cursor: pointer;
+                    opacity: 0.85;
+                }
+
+                .album-action {
+                    float: left;
+                    height: 36px;
+                    margin: 5px;
+                    opacity: 0.5;
+                    width: 36px;
+                }
+
+                .album-view {
+                    background: url("../../images/album_actions_sprite.png") repeat scroll 0px 0px;
+                }
+
+                .album-edit {
+                    background: url("../../images/album_actions_sprite.png") repeat scroll 72px 0px;
+                }
+
+                .album-remove {
+                    background: url("../../images/album_actions_sprite.png") repeat scroll 36px 0px;
+                }
+            }
+        }
+
+        :hover {
+            opacity: 1;
+        }
+    }
+}
+
+.album-thumbs-box {
+    .album-thumb {
+        background-size: cover;
+        background-repeat: no-repeat;
+        border:2px solid #fff;
+    }
+}
+
+.album-page {
+  .album-button {
+    margin-top: 15px;
+  }
+}
+
+.trigger-share {
+  cursor: pointer;
+}
+
+.portafolio {
+    margin-bottom: 15px;
+}

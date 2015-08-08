@@ -1,0 +1,33 @@
+<table width="500" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td height="80"><a href="{{site_url}}" target="_blank"><img src="{{logo_url}}" width="253" border="0"/></a></td>
+    </tr>
+    <tr>
+        <td height="34" style="font-size:14px;">Saludos  <strong>{{user_name}}</strong>, </td>
+    </tr>
+    <tr>
+        <td width="248" height="50" style="font-size:14px">Hemos recibido tu pago por un proyecto con los siguientes datos:</td>
+    </tr>
+    <tr>
+        <td width="248" style="font-size:14px">
+            Proyecto: {{project_title}}<br>
+            Nombre de usuario adjudicado: {{oferta_username}}<br>
+            Monto: {{amount}}<br>
+            Comision: {{comission}}<br>
+            Total: {{total}}<br>
+            ID de transaccion: {{transaction_id}}
+        </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="248" height="50" style="font-size:14px">Si todavia no has calificado el desempe&ntilde;o y los servicios prestados por el usuario '.$user_oferta['name'].' '.$user_oferta['lastname'].', haz click <a href="'.FConfig::getUrl('proyectoFinalizar').'?id='.$pro_id.'">aqu&iacute;</a></td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>El equipo de Fototea.com</td>
+    </tr>
+</table>

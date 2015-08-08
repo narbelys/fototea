@@ -1,0 +1,321 @@
+// Common
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 5px 8px 0;
+//    margin-top: 1px \9;
+}
+
+form {
+    .row{
+        padding-top: 10px; /* color to match Bootstraps error class */
+        &.first {
+            padding-top: 0;
+        }
+    }
+    .description-field {
+        position:relative;
+    }
+    .counter{
+        margin:0.6em 0;
+        position:absolute;
+        right:20px;
+        //top:10px;
+        //font-weight:bold;
+        color:#ccc;
+        font-style: italic;
+	}
+    .warning{color:#600;}
+    .exceeded{color:#A94442;}
+}
+
+
+.help-block {
+    margin-bottom: 0;
+}
+
+
+textarea.form-control {
+    resize:vertical;
+}
+
+select.form-control {
+    padding-right: 6px;
+}
+
+.required-before {
+
+  &:before {
+    content: '*';
+  }
+
+}
+
+.required-after {
+
+  &:after {
+    content: ' *';
+    color: #C6111B;
+    font-size: 12px;
+    vertical-align: top;
+  }
+
+}
+
+.formLabelAlign(){
+    display: inline-block;
+    margin-right: 5px;
+    text-align: right;
+}
+
+// Register form
+
+.register-form {
+    .register-field {
+        label {
+            .formLabelAlign();
+            width: 34%;
+        }
+
+        .register-radio {
+            margin-bottom: 20px;
+            margin-right: 5px;
+        }
+    }
+
+    .txBoxRegistro {
+        &.registro{
+            width: 50%;
+        }
+    }
+
+    .button-section {
+
+        margin-top: 30px;
+        text-align: center;
+
+        .registroEntrar{
+          padding:20px 0 0 20px;
+        }
+    }
+
+}
+
+.registroContainer {
+    .formError {
+        margin: auto;
+        width: 60%;
+    }
+}
+
+// Login form
+
+.login-form {
+    .register-field {
+        label {
+            .formLabelAlign();
+            width: 25%;
+        }
+    }
+}
+
+.login-container {
+    margin:auto;
+    width:400px;
+    min-height:440px;
+    padding:20px 0 60px 0;
+
+    h1{
+        font-size:26px;
+        margin-top:20px;
+        margin-bottom:10px;
+    }
+
+    .login-unregistered {
+        text-align: center;
+    }
+
+}input {
+   margin: 0;
+   padding: 0;
+ }
+
+.txtbox-base(){
+    height:35px;
+    font-size:14px;
+    font-weight: 100;
+    padding-left:10px;
+    margin-bottom:30px;
+    border-radius:5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+
+.txtbox-login {
+    .txtbox-base();
+    width:65%;
+}
+
+.txtbox-forget {
+  .txtbox-base();
+  width:100%;
+}
+
+.control-label {
+    margin-bottom: 10px;
+}
+
+.obligatorio{
+    color: #C6111B;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.form-buttons {
+    text-align: right;
+    border-top:1px solid @line-primary;
+    margin-top:30px;
+    padding-top:15px;
+}
+
+.categories-list-form {
+    .list-unstyled();
+    color:@text-soft;
+
+    li {
+        label{
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.date-field {
+    max-width: 300px;
+}
+
+.multiple-field {
+  display: inline;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 84.9%;
+}
+
+.experience-block .multiple-field {
+    display: inline;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 41.5%;
+}
+
+
+.plus {
+    color: #999999;
+    &:hover {
+        text-decoration: none;
+        color: #777;
+    }
+    .glyphicon-plus, .glyphicon-minus {
+        color: #F27F00;
+        margin-right: 5px;
+        &:hover {
+            color: #F27F00;
+        }
+    }
+}
+
+.experiencia-laboral {
+    .clearfix();
+    .plus {
+        float: left;
+    }
+    .multiple-field-remove {
+        float: left;
+        margin-top: 5px;
+    }
+    .form-control.multiple-field {
+        float: left;
+    }
+}
+
+
+/* Inline Forms */
+
+.edit-inline-link {
+    cursor: pointer;
+    font-size:10px;
+
+    i {
+        margin-right:0.5em;
+    }
+}
+
+.editable-pre-wrapped {
+    white-space: inherit;
+}
+
+.editable {
+    border:none;
+}
+
+.editableform {
+    .offer-description {
+        width:680px;
+
+        &:after {
+            content: "Editar"
+        }
+    }
+
+    //TOD fix this
+    .offer-amount-input {
+        width:80px;
+        height:26px;
+        margin-top: 1px;
+    }
+
+    .editable-submit {
+        .btn();
+        .btn-alternative();
+        .glyphicon();
+        .glyphicon-ok();
+    }
+
+    .editable-cancel {
+        .btn();
+        .btn-default();
+        .glyphicon();
+        .glyphicon-remove();
+//        color:#fff;
+//        &:hover {
+//            color:#fff;
+//        }
+    }
+}
+
+/* End inline forms */
+
+
+    .file-upload {
+        position: relative;
+        overflow: hidden;
+        margin-left: 10px;
+    }
+    .file-upload input.upload {
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        display: inline;
+    }
+
+    .file-upload-preview {
+        .date-field();
+        display: inline;
+    }
+

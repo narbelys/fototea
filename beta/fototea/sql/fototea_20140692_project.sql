@@ -1,0 +1,1 @@
+ALTER TABLE  `proyectos` CHANGE  `pro_budget`  `pro_budget` FLOAT NULL ;

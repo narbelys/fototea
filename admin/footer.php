@@ -1,0 +1,1 @@
+<p>Fototoea &copy; 2013. Todos los derechos reservados. Powered by: <a href="http>//www.sharkammahal.com" target="_blank">SharkamMahal.com</a></p>

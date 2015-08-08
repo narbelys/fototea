@@ -1,0 +1,22 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "*",
+	    "j4mie/idiorm":"*",
+        "symfony/http-foundation": "*",
+        "nategood/httpful": "*",
+        "respect/validation": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.14"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Fototea\\Models\\": "models/",
+            "Fototea\\Config\\": "config/",
+            "Fototea\\Util\\": "util/",
+            "Fototea\\App\\": "app/"
+        },
+        "files": ["init.php"]
+    }
+}

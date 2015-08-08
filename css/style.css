@@ -1,0 +1,557 @@
+/*layout*/
+html,body {
+	min-width:1024px;
+}
+body {
+    padding: 0px;
+    margin:0px;
+    background: url('../images/bk_page.jpg') repeat;
+    /*font-family:verdana,helvetica,arial,sans-serif;*/
+	font-size:14px;
+	font-family: 'Raleway', sans-serif;
+	font-weight:300;
+}
+a{
+	color:#fff;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+.wrapper{
+	width:100%;
+}
+.headerContainer{
+	background: url('../images/bk_header.jpg') repeat;	
+	width: 100%;
+	height: 65px;
+}
+.header{
+	margin:auto;
+	width:1024px;
+	padding:0px 0px 20px 0px;
+}
+
+.logo{
+	width:415px;
+	float:left;
+	
+}
+.containerMenuInicio{
+	width:300px;
+	float:left;
+	padding-top:19px;
+}
+.menuInicio{
+	padding:8px 20px 8px 20px;
+	float:left;
+}
+.containerMenuInicio > span {
+    float: left;
+    line-height: 46px;
+    color: #333;
+}
+.menuInicio a{
+	color:#FFF;
+	font-size:16px;
+	text-decoration:none;
+}
+.menuInicio a:hover{
+	text-decoration:underline;
+}
+.separatorRight{
+	border-right: 1px solid #FFF;
+}
+
+.containerLogin{
+	width:260px;
+	float:left;
+	padding-top:15px;
+	padding-left:15px;
+}
+.containerLogin div{
+	margin-right:10px;
+	float:left;
+	
+}
+.social{
+	color:#000;
+	font-size:16px;
+	text-align:right;;
+	float: left;
+	width: 100px;
+	height: 35px;
+	padding-top: 25px;
+	
+}
+
+.container{
+	min-height:400px;
+	width:100%;
+	background: #FFF;
+	
+}
+.container h1{margin: 0px;}
+
+.footer-container{
+	width: 100%;
+	background: #FFF;
+}
+.footer{
+	margin:auto;
+	height:315px;
+	width:984px;
+	padding:30px 20px 30px 20px;
+}
+.footerSubContainer{
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	height:255px;
+	padding:30px 0 30px 0;
+	
+}
+.footerContacto{
+	width:275px;
+	float:left;
+	padding:0 48px 0 15px;
+	font-size:10px;
+	color:#333;
+}
+.footerContacto img{
+	padding-bottom:20px;
+}
+.footerContacto li a{
+	font-size:12px;
+	color:#333;
+	text-decoration:none;
+}
+.footerContacto li a:hover{
+	text-decoration:underline;
+}
+.footerContacto a{
+	color:#333;
+	text-decoration:none;
+}
+.footerContacto a:hover{
+	text-decoration:underline;
+}
+.footerContacto ul{
+	padding-bottom:40px;
+	list-style:none;
+	padding-left:0;
+}
+.footerContacto li{
+	line-height:20px;
+
+}
+.footerTwitter{
+	width:300px;
+	float:left;
+	margin-right:30px;
+}
+.footerTwitter .timelime{
+	width:300px;
+}
+.footerFacebook{
+	width:300px;
+	float:left;
+}
+
+.btn_naranja{
+	background: url("../images/bk_naranja.jpg") repeat;
+	padding:10px 20px 10px 20px;
+	color:#FFF;
+	font-size:16px;
+	text-align:center;
+}
+.btn_naranja_round{
+	background: url("../images/bk_naranja.jpg") repeat;
+	padding:20px 20px 20px 20px;
+	width: 370px;
+	color:#FFF;
+	font-size:20px;
+	text-align:center;
+	clear:both;
+	font-weight:bold;
+	border-radius:5px;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+.btn_naranja_round a{
+	background:url("../images/img_row.png") right no-repeat transparent;
+	padding-right:30px;
+}
+.btn_verde_round{
+	background: url("../images/bk_verde.jpg") repeat;
+	padding:20px 20px 20px 20px;
+	width: 370px;
+	color:#FFF;
+	font-size:20px;
+	text-align:center;
+	clear:both;
+	font-weight:bold;
+	border-radius:5px;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+.btn_verde_round a{
+	background:url("../images/img_row.png") right no-repeat transparent;
+	padding-right:30px;
+}
+.btn_azulOscuro{
+	background: url("../images/bk_azulOscuro.jpg") repeat;
+	padding:10px 20px 10px 20px;
+	width: 90px;
+	color:#FFF;
+	font-size:16px;
+	text-align:center;
+}
+
+
+.contenido{
+	padding:20px;
+	margin: auto;
+	width: 984px;
+}
+
+h1{
+	font-size:20px;
+}
+.padding20{
+	padding:20px;
+}
+.marginRight35{
+	margin-right: 35px;
+}
+.marginRight30{
+	margin-right: 30px;
+}
+.marginRight54{
+	margin-right: 54px;
+}
+.marginRight6{
+	margin-right: 6px;
+}
+.marginTop6{
+	margin-top: 6px;
+}
+.padding15{
+	padding: 15px;
+}
+.marginAuto{
+	margin:auto;
+}
+.width100{
+	width: 100%;
+}
+.widthPage{
+	width: 1024px;
+}
+.bkGris{
+	background: url("../images/bk_gris.jpg") repeat;
+}
+.bkNaranja{
+	background: url("../images/bk_naranja.jpg") repeat;
+}
+.bkCBlanco{
+	background: url("../images/bk_cblanco.jpg") repeat;
+}
+.bkGrisCC{
+	background: url("../images/bk_grisCC.jpg") repeat;
+}
+.bkAzulC{
+	background: url("../images/bk_azulC.jpg") repeat;
+}
+.bkBeige{
+	background: url("../images/bk_beige.jpg") repeat;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.alignCenter{
+	text-align:center;
+}
+.alignLeft{
+	text-align:left;
+}
+.alignJustify{
+	text-align:justify;
+}
+
+.bold{
+	font-weight:bold;
+}
+.font41{
+	font-size:41px;
+}
+.font34{
+	font-size:34px;
+}
+
+/* /layout */
+
+/*error pages */
+.errorPage{
+	padding:20px;
+	margin: auto;
+	width: 984px;
+}
+.errorPage h3{
+	margin-bottom:0;
+}
+
+/* /error pages */
+
+/* home */
+
+.divClientes{
+	height:460px;
+	padding:20px;
+	margin: auto;
+	width: 984px;
+}
+.divClientesTitulo{
+	color:#fff;
+	font-size:30px;
+	border-top:2px solid #ccc;
+	border-bottom:2px solid #ccc;
+	text-align:center;
+	line-height: 60px;
+	margin-top:20px;
+	margin-bottom:40px;
+}
+.divClientesContainer{
+	width: 292px;
+	height: 308px;
+	float: left;
+	display: inline;
+	
+}
+.divClientesDet{
+	width: 141px;
+	height: 151px;
+	background: url("../images/bk_grisClaro.jpg") repeat;
+	float: left;
+	border:1px solid #ccc;
+	font-size: 16px;
+	color:#333;
+	line-height: 22px;
+}
+
+.divTipoUser{
+	margin:45px 39px 45px 40px;
+}
+.height432{
+	height:432px;
+}
+.divTipoUserDesc{
+	width:170px;
+	font-size:20px;
+	color:#333;
+	padding:35px 20px 35px 5px;
+	line-height:28px;
+}
+.divTipoUserIcon{
+	width:218px;
+	padding:35px 5px 35px 15px;
+	height:190px;
+}
+.divTipoUserTitle{
+	color:#003366;
+	font-size:25px;
+	font-weight:bold;
+}
+
+.divSteps{
+	height:430px;
+	width:904px;
+	padding:40px 60px;
+	
+}
+.divStepsContainer{
+	width:230px;
+	color:#333;
+	margin:0px 35px 0px 35px;
+}
+.divStepsContainerLast{
+	width:230px;
+	color:#333;
+}
+.divStepsTitle{
+	color:#333;
+	font-size:28px;
+	text-align:center;
+	font-weight:bold;
+	padding-bottom:30px;
+}
+.divStepsSubTitle{
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	width:100%;
+	padding:25px 0px 25px 0px;
+}
+.divStepsDesc{
+	padding-left:10px;
+	
+	font-size:16px;
+	text-align: center;
+}
+.divRotator{
+	background: url("../images/rotator.jpg") center no-repeat;
+	height:470px;
+}
+.divServ{
+	padding: 70px 25px 70px 25px;
+	height:570px;
+	width:974px;
+}
+.divServRight{
+	width:230px;
+	font-size:30px;
+	color:#333;
+	text-align:right;
+	font-weight:400;
+}
+.divServRight p{
+	margin:0;
+	margin-bottom:42px;
+}
+.divServLeft{
+	width:740px;
+}
+.divServleftTitle{
+	font-size:24px;
+	color:#333;
+	margin-left:20px;
+}
+.divServleftTitle img{
+	padding-left:40px;
+	padding-right:40px;
+}
+.divServleftText{
+	width:590px;
+	font-size:18px;
+	color:#333;
+	padding-top:40px;
+	padding-bottom:40px;
+	text-align: center;
+	margin-left:20px;
+}
+.divServLeftCol{
+	width:205px;
+	margin-right:28px;
+	margin-bottom:50px;
+	font-size:18px;
+	color:#333;
+}
+.divServLeftCol p{
+	margin:0px;
+	margin-bottom:20px;
+}
+.divContacto{
+	height:400px;
+	color:#FFF;
+	padding:50px 25px;
+	width:974px;
+}
+.divContactoLeft{
+	text-align: center;
+	font-size:36px;
+	width:590px;
+	margin-bottom:30px;
+	line-height: 55px;
+	font-weight: bold;
+}
+.divContactoLeft span{
+	font-size:44px;
+	
+}
+.divContactoRight{
+	text-align: right;
+	font-size:42px;
+	line-height: 55px;
+}
+.divContactoBtn{
+	float:right;
+	margin-top:60px;
+}
+/* /home */
+
+/* contrar y trabajar */
+.containerStepGeneral{
+	padding:80px 25px;
+	height: 240px;
+}
+.stepGeneral{
+	width:435px;
+	margin-left:10px;
+	margin-right:10px;
+	padding-left: 40px;
+}
+.stepGeneralP{
+	width:400px;
+	margin-left:10px;
+	margin-right:30px;
+	padding-left: 15px;
+}
+.stepGeneralImgP{
+	width:480px;
+	margin-left:10px;
+	margin-right:10px;
+	padding-left: 25px;
+}
+.stepGeneralTitle{
+	color:#336699;
+	font-size:25px;
+	margin-bottom:20px;
+	margin-top: 35px;
+}
+.stepGeneralTitleP{
+	color:#336699;
+	font-size:25px;
+	margin-bottom:20px;
+	
+}
+.stepGeneralText{
+	color:#333;
+	font-size:14px;
+	line-height: 16px;
+    width: 350px;
+}
+.stepGeneralTextP{
+	color:#333;
+	font-size:14px;
+	margin-bottom:20px;
+	line-height: 16px;
+}
+.stepGeneralBtn{
+	width:300px;
+	margin-right: 10px;
+	margin-top: 65px;
+}
+.stepGeneralBtnP{
+	width:300px;
+
+}
+.stepGeneralIcon{
+	width:123px;
+}
+.stepGeneralImgTitle{
+	width:211px;
+	color:#336699;
+	font-size:14px;
+	margin-right:30px;
+	text-align:center;
+}
+.stepGeneralImgTitle p{
+	padding:0px;
+	margin:0px;
+	font-weight: 400;
+}
+/* contrar y trabajar */

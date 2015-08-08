@@ -1,0 +1,1 @@
+ALTER TABLE  `credits` ADD  `reasigned_credit_id` INT NULL;

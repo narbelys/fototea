@@ -1,0 +1,93 @@
+.help {
+    font-size: 0.96em;
+    dl.faq {
+        margin-bottom:30px;
+        dt {
+            font-weight:bold;
+            color:#000000;
+            padding: 0 0 5px;
+            display:block;
+        }
+        dd {
+            padding-bottom:22px;
+            margin-bottom: 20px;
+            border-bottom:1px solid #EEE;
+            display:block;
+            margin-left: 0;
+        }
+    }
+    a:hover {
+        text-decoration: none;
+        color: #3385CB;
+    }
+    a {
+        color: #333;
+    }
+    li {
+        line-height: 25px;
+    }
+    hr {
+        margin-top: 35px;
+    }
+    .pagetop {
+        position: fixed;
+        bottom: 30px;
+        right: 6%;
+    }
+}
+
+
+.terminos-y-condiciones {
+    ol {
+        counter-reset: item;
+        font-weight: normal;
+        margin-bottom: 20px;
+        margin-left: -22px;
+        margin-top: 10px;
+        padding-left: 50px;
+        text-align: justify;
+        &.first {
+            font-weight: bold;
+            margin-left: 5px;
+            margin-right: 15px;
+        }
+        font-weight: normal;
+        li {
+            list-style-position: inside;
+            margin-left: -10px;
+            text-indent: -1.7em;
+        }
+    }
+    li {
+        display: block;
+    }
+    li:before {
+        content: counters(item, ".") ". ";
+        counter-increment: item;
+    }
+    .terminos-content {
+        font-weight: normal;
+        margin-bottom: 20px;
+        margin-left: -11px;
+        margin-top: 10px;
+        text-align: justify;
+        text-indent: 0;
+        &.inside {
+            margin: 0;
+        }
+    }
+    p {
+        margin-left: 1.1em;
+        text-indent: -1.1em;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    p.inside {
+        margin-left: 1.5em;
+        text-indent: -0.5em;
+    }
+    p.outside {
+        margin-left: 0.6em;
+        text-indent: -0.6em;
+    }
+}

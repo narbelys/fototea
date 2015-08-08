@@ -1,0 +1,121 @@
+
+
+.rotator-title {
+    font-size: 2.25em;
+    font-weight: bold;
+    width: 525px;
+    letter-spacing: 1px;
+    height:70px;
+}
+
+.rotator-text {
+    font-size: 2em;
+    letter-spacing: 1px;
+    line-height: 1.3em;
+}
+
+
+.rotator-text-bottom {
+    float: right;
+    margin-right: 40px;
+    clear: both;
+//    width: 300px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: right;
+    margin-top: 20px;
+
+    a {
+        color:#000;
+        font-weight:bold;
+    }
+}
+
+
+.step-desc {
+    padding-left:10px;
+    font-size:1.1em;
+    text-align: center;
+}
+
+.services {
+    width: 992px;
+    height: 340px;
+    .title {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        margin: 30px 0 20px 0;
+    }
+    .carrousel_inner {
+        float:left;
+        width:932px;
+        height:233px;
+        overflow: hidden;
+        ul {
+            margin:0;
+            padding:0;
+            width: 10000px;
+            overflow:hidden;
+            li {
+                float:left;
+                list-style: none;
+                margin: 0;
+                width:233px;
+                div {
+                    background-color: rgba(0, 0, 0, 0.65);
+                    bottom: 0px;
+                    color: #FFFFFF;
+                    height: 45px;
+                    line-height: 4em;
+                    position: relative;
+                    text-align: center;
+                    width: 233px;
+                    transition: bottom .7s ease-out;
+                    -moz-transition: bottom .7s ease-out;
+                    -webkit-transition: bottom .7s ease-out;
+                }
+                &:hover {
+                    div {
+                        bottom: 45px;
+                    }
+                }
+            }
+        }
+    }
+    .carrousel_left, .carrousel_right {
+        height: 233px;
+        width:30px;
+        float:left;
+    }
+    .carrousel_left {
+        background: url("../../images/nav_left.gif") no-repeat  left top;
+        :hover {
+            background:url("../../images/nav_left.gif") no-repeat scroll -30px top transparent
+        }
+    }
+    .carrousel_right{
+        background: url("../../images/nav_right.gif") no-repeat right top;
+        :hover {
+            background: url("../../images/nav_right.gif") no-repeat -30px top;
+        }
+    }
+    .left_inactive,.left_inactive:hover {
+        background: url("../../images/nav_left.gif") no-repeat -60px top;
+        cursor: auto;
+    }
+    .right_inactive,.right_inactive:hover {
+        background: url("../../images/nav_right.gif") no-repeat 0px top;
+        cursor: auto;
+    }
+    .carrousel {
+        float:left;
+        height: 233px;
+        margin: auto;
+    }
+}
+
+.partners {
+     background: url("../../images/partners.png") no-repeat center #DDD;
+     height: 380px;
+}

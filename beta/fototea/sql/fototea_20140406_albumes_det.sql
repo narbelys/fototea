@@ -1,0 +1,1 @@
+ALTER TABLE  `albumes_det` ADD  `ad_is_principal` BOOLEAN NOT NULL DEFAULT FALSE

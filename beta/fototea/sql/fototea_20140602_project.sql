@@ -1,0 +1,1 @@
+ALTER TABLE `proyectos` CHANGE `pro_length` `pro_length` VARCHAR( 20 ) CHARACTER SET utf8 COLLATE utf8_spanish_ci NULL ;

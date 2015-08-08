@@ -1,0 +1,361 @@
+.makeTransparent{
+    background-color: @profile-bg-color;
+}
+
+.profileBoxShadow {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=90, Color=#888888)";/*IE 8*/
+    -moz-box-shadow: 2px 0px 5px #888888;/*FF 3.5+*/
+    -webkit-box-shadow: 2px 0px 5px #888888;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: 2px 0px 5px #888888;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=90, Color=#888888); /*IE 5.5-7*/
+}
+
+.profile-container {
+    min-height:@cover-min-height;
+    max-width:@page-max-width;
+    min-width: @page-min-width;
+    width:100%;
+    margin:auto;
+    position: relative;
+
+    .cover-image {
+        width:100%;
+        display: block;
+    }
+
+    .info-perfil-container {
+        position:absolute;
+        width:100%;
+        top:@header-fixed-height;
+        margin-top:25px;
+
+        .profile-box {
+            float:left;
+            width:50%;
+            max-width: 492px;
+
+            .perfil-name {
+                .profileBoxShadow();
+                .makeTransparent();
+                padding-left:25px;
+                font-size:18px;
+                font-weight: bold;
+                height: @profile-name-height;
+                line-height:@profile-name-height;
+                border-radius:0 5px 5px 0;
+                color:@profile-text-color;
+
+                .btn {
+                    float:right;
+                    margin-right:1em;
+                    margin-top:12px;
+                }
+            }
+
+            .perfil-desc {
+                .profileBoxShadow();
+                .makeTransparent();
+                color:@profile-text-color;
+                width: 464px;
+                height: 112px;
+                border-radius: 5px;
+                margin-top:22px;
+                padding: 13px;
+                margin-left: 28px;
+                padding-left: 130px !important;
+                border-top-left-radius: 55px !important;
+                border-bottom-left-radius: 55px !important;
+
+                &.empty {
+                    border-bottom-right-radius: 55px;
+                    border-top-right-radius: 55px;
+                    padding-left: 97px !important;
+                    width: 0px;
+                }
+                
+                p {
+                    .hyphens();
+                }
+
+            }
+        }
+
+        .search-box {
+            float:right;
+            width:50%;
+
+            .search-form {
+                .makeTransparent();
+                .makeShadow();
+                height:@profile-name-height;
+                border-radius: 5px;
+                width:330px;
+                margin-right:4%;
+                float:right;
+
+                .search-input {
+                    background: transparent;
+                    float:right;
+                    border: 0 none;
+                    height:100%;
+                    text-align: left;
+                    width: 280px;
+                    outline: none;
+                    color:@profile-text-color;
+                }
+
+                .search-btn {
+                    float:right;
+                    display: block;
+                    width:25px;
+                    height:100%;
+                    background:transparent url("../../images/icon_buscar.png") center center no-repeat;
+                    border: none;
+                }
+            }
+
+        }
+    }
+
+    .user-balance-options {
+        position: absolute;
+        top:160px;
+        right:0;
+        background-color: #fff;
+        padding-left:12px;
+        width:190px;
+
+//        line-height: 40px;
+        font-size: 1.1em;
+
+        .arrow-left {
+            width: 0;
+            height: 0;
+            border-top: 18px solid transparent;
+            border-bottom: 18px solid transparent;
+            border-right: 18px solid #fff;
+            display: block;
+            float: left;
+            margin-left: -30px;
+        }
+
+        .show-my-balance, .create-new-project {
+            margin-right:2%;
+            font-weight: bold;
+            line-height: 36px;
+            color: #333333;
+
+            .balance-amount {
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    .profile-image-options {
+        display: block;
+        position: absolute;
+        right:2%;
+        bottom:45px;
+    }
+
+    .profile-edit-options, .profile-image-options {
+        opacity: 0;
+        transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity .5s ease-in-out;
+
+        &.visible {
+            opacity: 1;
+        }
+    }
+
+    &:hover {
+
+        .profile-edit-options, .profile-image-options {
+            opacity: 1;
+        }
+    }
+
+    .info-tabs-container {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: @tabs-box-height;
+
+        .tab-box {
+            margin: auto;
+            width: @page-padded-width;
+            max-width: @page-max-width;
+            height: @tabs-box-height;
+
+            .pestanasPerfilCont{
+                position: absolute;
+                top: 260px;
+                margin-left:25px;
+            }
+            .pestanaPerfil{
+                text-align:center;
+                font-size:18px;
+                line-height:35px;
+                width:112px;
+                height:33px;
+                background: url("../images/bk_btn_perfil_selected.png") no-repeat;
+                margin-right:20px;
+            }
+            .pestanaPerfilSelected{
+                background: url("../images/bk_btn_perfil.png") no-repeat;
+                color:#000; font-weight:400;
+            }
+            .pestanaPerfil a{color:#000; font-weight:400;}
+
+            .tab {
+                .pull-left();
+                text-align: center;
+                width:@tabs-width;
+                height:@tabs-box-height;
+                margin-right: 20px;
+                background: rgba(255,255,255,0.75);
+                border-radius:8px 8px 0 0;
+
+                &.selected {
+                    background: rgba(255,255,255,1);
+                }
+
+                a {
+                    color:#000;
+                    font-weight: bold;
+                    line-height: @tabs-box-height;
+                }
+            }
+        }
+    }
+}
+
+// Portfolio
+
+.more-albums-info {
+    width:50%;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    margin: auto;
+}
+
+// Wizard
+.wizard-step-link {
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+}
+
+// Registro
+.textAreaRegistro {
+    border-radius: 5px;
+    display: block;
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    padding: 6px;
+    width: 430px;
+}
+
+.user_interes {
+    margin-right: 8px;
+}
+
+// Reviews
+.list-comments-container {
+    .list-comment-item {
+
+    }
+}
+
+// Completar preferencias
+
+.genero {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    .register-radio {
+        margin-top: 3px;
+    }
+}
+
+.save-buttons {
+    margin-top: 20px;
+}
+
+// Profile
+.multiple-field-remove {
+    background-image: url("../../images/pk-icon-close.png");
+    background-position: 0 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 24px;
+    vertical-align: middle;
+    width: 20px;
+    &:hover {
+      background-position: 0 20px;
+    }
+    &.new {
+        margin-left: 4px;
+    }
+}
+
+// Proyectos tab - photograph
+.projects-tab-photograph {
+    .list-header {
+        h2 {
+            line-height: 20px;
+            &.left-time-col {
+                margin-left: 10px;
+            }
+        }
+    }
+
+}
+
+.review-summary {
+    .clearfix();
+}
+
+.review-details-box {
+    line-height: 25px;
+    .pull-left.rating_det_fot_item {
+        width: 120px;
+    }
+}
+
+.skip-button {
+    margin-right: 10px;
+}
+
+.rating-n {
+    margin-top: 5px;
+}
+
+.content-container.register {
+    padding-bottom: 0;
+    .content {
+        margin-bottom: 0;
+        .content-row {
+            height: 610px;
+            .form-row.terms {
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+.complete-profile .skip-button-top, .complete-preferences .skip-button-top {
+    margin-right: 0px;
+}
+
+.edit-password-container {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.new-email-alert {
+    cursor: pointer;
+}
